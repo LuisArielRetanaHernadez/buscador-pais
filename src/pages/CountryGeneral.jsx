@@ -1,3 +1,4 @@
+// hooks del react dom
 import { useState, useEffect } from 'react';
 // componentes globales
 import Country from '../components/Country'
@@ -24,10 +25,8 @@ const CountryGeneral = () => {
         getCountryAll()
     },[])
 
-    
-
     useEffect(() => {
-        const limit = []
+        const limit = []//aqui almacena los pais limitados(me almacena 15 paises de 250 paises)
         if(countryAll.length >= 15 && !err){
             for(let i = 0; i < countryAll.length; i++){
                 limit.push(countryAll[i])
@@ -37,7 +36,6 @@ const CountryGeneral = () => {
         }
     },[countryAll,err])
 
-    console.log(countryLimit)
     return (
        <section>
            <Menu />

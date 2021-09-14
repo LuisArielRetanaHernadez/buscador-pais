@@ -1,10 +1,11 @@
-import Menu from "../components/Menu"
-
-// estilos del propio CountryForm
-import '../styles-pages/CountryForm.css'
+// hooks del react dom
 import { useState } from 'react';
+// componentes globales
+import Menu from "../components/Menu"
 import Country from "../components/Country";
 import ErrFetch from "../components/ErrFetch";
+// estilos del propio CountryForm
+import '../styles-pages/CountryForm.css'
 
 const CountryForm = () => {
 
@@ -20,10 +21,7 @@ const CountryForm = () => {
         const response = await fetch(url).then(res => {setStatus(res.status); return res.json()} ).catch(er => setErr(true))
         setData(response)
     }
-    console.log('informacion de la busqueda', data)
-    console.log(status)
-    console.log(err)
-    
+  
     return (
         <>
             <Menu />

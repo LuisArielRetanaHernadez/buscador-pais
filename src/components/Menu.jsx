@@ -1,4 +1,4 @@
-// router-dom
+// react-router-dom
 import { Link } from 'react-router-dom';
 // estilos del propio Menu
 import '../styles/Menu.css'

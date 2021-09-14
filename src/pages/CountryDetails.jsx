@@ -1,5 +1,7 @@
-import { useParams } from "react-router"
+// hooks react dom
 import { useEffect, useState } from 'react';
+// react-route-dom
+import { useParams } from "react-router"
 // componente globales
 import Menu from "../components/Menu";
 import HeaderCountry from "../components/HeaderCountry";
