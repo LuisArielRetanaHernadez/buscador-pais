@@ -1,0 +1,49 @@
+.country-details{
+    width: 100%;
+    height: 35vw;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.country-details .img-details{
+    width: 49%;
+    height: 100%;
+}
+.img-details{
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 15%;
+}
+.img-details img{
+    width: 98%;
+    height: 98%;
+    border-radius: 15%;
+}
+.country-details .info-details{
+    width: 49%;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    align-items: center;
+}
+.info-details ol{
+    list-style-type: none;
+    padding: 0;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.info-details ol li{
+    background-color: none;
+    width: 45%;
+    margin: 20px;
+    box-sizing: border-box;
+}

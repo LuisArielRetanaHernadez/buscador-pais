@@ -1,0 +1,39 @@
+.country{
+    width: 23%;
+    border-radius: 15%;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.country .flag-of-country{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: 0.4s;
+}
+.flag-of-country img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
+.info-country{
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: 0.4s;
+}
+.flag-of-country:hover + .info-country{
+    display: flex;
+}
+.info-country:hover{
+    display: flex;
+}

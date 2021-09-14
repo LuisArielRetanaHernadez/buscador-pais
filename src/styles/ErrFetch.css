@@ -1,0 +1,11 @@
+.err-fetch{
+    width: 100%;
+    height: 17vw;
+    border: 2px solid red;
+}
+.err-fetch h2{
+    color: yellow;
+}
+.err-fetch h3{
+    color: red;
+}
