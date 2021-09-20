@@ -5,9 +5,10 @@
     justify-content: center;
     box-sizing: border-box;
 }
-.prueba{
+.efect-scroll{
     background-color: blue;
     height: 10px;
     position: relative;
     bottom: 0;
+    visibility: hidden;
 }

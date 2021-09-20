@@ -6,6 +6,7 @@ import Country from "../components/Country";
 import ErrFetch from "../components/ErrFetch";
 // estilos del propio CountryForm
 import '../styles-pages/CountryForm.css'
+import Loading from '../components/Loading';
 
 const CountryForm = () => {
 
@@ -37,7 +38,7 @@ const CountryForm = () => {
                 </form>
             </div>
             <div className='country-sharch'>
-                {!err && status !== 404 ? data.length > 0 ? data.map((data) => <Country key={data.name} flag={data.flag} name={data.name}></Country>) : 'cargando' : <ErrFetch alert='err de busqueda' messages='al parecer no encontramos el pais'></ErrFetch>  }
+                {!err && status !== 404 ? data.length > 0 ? data.map((data) => <Country key={data.name} flag={data.flag} name={data.name}></Country>) : <Loading /> : <ErrFetch alert='error de busqueda' messages='al parecer no encontramos el pais'></ErrFetch>  }
             </div>
         </>
     )

@@ -1,0 +1,78 @@
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.loading{
+    width: 10%;
+    height: 40%;
+    background-color: none;
+    border-radius: 50%;
+    border: 3px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    animation: 5s linear;
+    animation-name: loading;
+    animation-iteration-count: infinite;
+}
+@keyframes loading {
+    from{
+        transform: rotate(360deg)
+    }
+    to{
+        transform: rotate(1deg)
+    }
+}
+.loading .loading-1{
+    width: 50%;
+    height: 50%;
+}
+.loading-1{
+    background-color: none;
+    border-radius: 50%;
+    border: 3px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    animation: 5s linear;
+    animation-name: loading-1;
+    animation-iteration-count: infinite;
+}
+@keyframes loading-1 {
+    from{
+        transform: rotate(360deg)
+    }
+    to{
+        transform: rotate(1deg)
+    }
+}
+.loading-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-1 .loading-2{
+    width: 50%;
+    height: 50%;
+}
+.loading-2{
+    background-color: none;
+    border-radius: 50%;
+    border: 3px solid black;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    animation: 5s linear;
+    animation-name: loading-2;
+    animation-iteration-count: infinite;
+}
+@keyframes loading-2 {
+    from{
+        transform: rotate(360deg)
+    }
+    to{
+        transform: rotate(1deg)
+    }
+}

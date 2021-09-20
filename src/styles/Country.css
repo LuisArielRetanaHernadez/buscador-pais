@@ -7,6 +7,7 @@
     margin: 10px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .country .flag-of-country{
     width: 100%;
@@ -20,23 +21,25 @@
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    transition: 1s;
 }
 .info-country{
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    background-color: rgba(19, 9, 9, 0.37);
+    background-color: rgba(0, 0, 0, 0.801);
     position: absolute;
+    top: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: none;
-    transition: 0.4s;
+    display: flex;
+    transition: 1s;
 }
 .flag-of-country:hover + .info-country{
-    display: flex;
+    top: 0;
 }
 .info-country:hover{
-    display: flex;
+    top: 0;
 }

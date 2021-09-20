@@ -8,6 +8,7 @@ import HeaderCountry from "../components/HeaderCountry";
 
 // estilos del propio CountryDetails
 import '../styles-pages/CountryDetails.css'
+import Loading from '../components/Loading';
 
 
 const CountryDetails = () => {
@@ -46,7 +47,7 @@ const CountryDetails = () => {
                     <li><b>poblacion estimada: </b> {data[0].population}</li>
                 </ol>
             </div>
-        </div> : 'cargando datos...' : 'hubo un erro'}
+        </div> : <Loading /> : 'hubo un erro'}
         </>
     )
 }

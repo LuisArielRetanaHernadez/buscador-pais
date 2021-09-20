@@ -4,6 +4,7 @@ import React,{ useState, useEffect, useRef } from 'react';
 import Country from '../components/Country'
 import HeaderCountry from '../components/HeaderCountry';
 import Menu from '../components/Menu'
+import Loading from '../components/Loading'
 // styles del propio CountryGeneral
 import '../styles-pages/CountryGeneral.css'
 
@@ -64,9 +65,9 @@ const CountryGeneral = () => {
            <HeaderCountry />
            <h2>Explora algunos paises </h2>
            <div className="country-general">
-            {!err ? countryLimit.length > 0 ? countryLimit.map(data => <Country key={data.name} name={data.name} flag={data.flag} />) : 'cargando...'   : 'err, no hay resultados '}
+            {!err ? countryLimit.length > 0 ? countryLimit.map(data => <Country key={data.name} name={data.name} flag={data.flag} />) : <Loading />   : 'err, no hay resultados '}
            </div>
-           <div ref={elementVisiblite} className='prueba'></div>
+           <div ref={elementVisiblite} className='efect-scroll'></div>
        </section> 
     )
 }
