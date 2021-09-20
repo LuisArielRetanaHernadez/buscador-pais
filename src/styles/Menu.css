@@ -19,8 +19,7 @@ ul{
 li{
     width: 4%;
 }
-a{
+ a{
     font-size: 20px;
-    text-decoration-line: none;
-    color: rgba(35, 35, 114, 0.815);
+    color: white;
 }

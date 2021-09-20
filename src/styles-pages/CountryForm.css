@@ -1,32 +1,44 @@
 .country-form{
     width: 100%;
-    height: 13vw;
-    background-color: red;
+    height: 20vw;
+    background-image: url(../media/img/fondo-header.jpg);
+    background-size: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .form-country{
-    height: 100%;
-    background-color: black; 
+    height: 25%;
+    width: 20%;
+    background-color: rgba(128, 128, 128, 0.493);
+    border-radius: 10px;
     display: flex;   
     align-items: center;
     justify-content: center;
 }
 .component-country-form{
-    width: 15%;
-    height: 15%;
-    background-color: burlywood;
+    background-color: none;
 }
 .component-country-form input {
-    width: 100%;
-    height: 100%;
+    padding: 4px 3px;
+    border: none;
     outline: none;
 }
 .container-btn-country-form{
-    width: 5%;
-    height: 15%;
-    background-color: teal;
+    background-color: none;
 }
 .container-btn-country-form button{
-    padding: 7px 15px;
+    padding: 4px 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    transition: .2s;
+}
+.container-btn-country-form button:hover{
+    background-color: rgb(0, 45, 71);
 }
 .country-sharch{
     width: 100%;

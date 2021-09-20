@@ -1,13 +1,17 @@
 .header-country{
     width:100%;
     height: 15vw;
-    background-color: black;
+    background-image: url(../media/img/fondo-header.jpg);
+    background-size: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
 }
-.header-country h2{
+.header-country a{
     color: white;
 }

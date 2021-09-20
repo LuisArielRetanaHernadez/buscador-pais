@@ -5,3 +5,9 @@
     justify-content: center;
     box-sizing: border-box;
 }
+.prueba{
+    background-color: blue;
+    height: 10px;
+    position: relative;
+    bottom: 0;
+}

@@ -17,12 +17,12 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border-radius: 15%;
+    border-radius: 20px;
 }
 .img-details img{
     width: 98%;
     height: 98%;
-    border-radius: 15%;
+    border-radius: 20px;
 }
 .country-details .info-details{
     width: 49%;
