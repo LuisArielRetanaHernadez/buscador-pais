@@ -37,12 +37,12 @@
     background-color: none;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
 .info-details ol li{
     background-color: none;
+    text-align: initial;
     width: 45%;
     margin: 20px;
     box-sizing: border-box;
