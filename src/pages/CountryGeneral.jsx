@@ -22,10 +22,11 @@ const CountryGeneral = () => {
     // AQUI ES DONDE SE HACE LA PETICION FETCH PARA LLAMAR A TODOS LOS PAISES
     useEffect(() => {
         const getCountryAll = async () => {
-            const url = 'https://restcountries.eu/rest/v2/all'
+            const url = 'https://restcountries.com/v2/all'
             const response = await fetch(url).then(res => res.json()).catch(er => setErr(true))
             setCountryAll(preve => {
-                if(preve !== response){return response}else{return preve}
+                if(preve !== response) return response 
+                else return preve
             })
         }
         getCountryAll()

@@ -22,7 +22,7 @@ const CountryDetails = () => {
     console.log(country)
     useEffect(() => {
         const getDetailsCountry = async () => {
-            const url = `https://restcountries.eu/rest/v2/name/${country}`
+            const url = `https://restcountries.com/v2/name/${country}`
             const response = await fetch(url).then(res => res.json()).catch(er => setErr(er))
             setData(response)
         }

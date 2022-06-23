@@ -11,7 +11,7 @@ const WeatherCountry = ({name}) => {
 
     useEffect(() =>{
         const getWeather = async () => {
-            const url = `https://api.weatherapi.com/v1/current.json?key=c7db0c19785644e9a26231420210307&&q=${name}&aqi=no`
+            const url = `https://restcountries.com/v2/name/${name}`
             const response = await fetch(url).then(res => {setStatus(res.status); return res.json()}).catch(er => setErr(true))
             setData(response)
         }
@@ -22,10 +22,10 @@ const WeatherCountry = ({name}) => {
         <div className='weather-country'>
             <div className='weather'>
                 <div className='name-city'>
-
+                    <h3>{data[0]?.name}</h3>
                 </div>
                 <div className='container-img-weather'>
-                    <img />
+                   
                 </div>
                 <div>
 
