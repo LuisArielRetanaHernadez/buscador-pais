@@ -54,7 +54,7 @@ const CountryGeneral = () => {
     // AQUI ES DONDE SE PONEN LOS SIGUIENTES ELEMENTOS (PAISES) CUANDO EL NUMBERPAGE CAMBIE 
     useEffect(() => {
         const indexLastRende = numberPage * 15
-        if(indexLastRende <= countryAll.length){
+        if(indexLastRende <= countryAll?.length){
             const elementsRende = countryAll.slice(0, indexLastRende)
             setCountryLimit(elementsRende)
         }
@@ -66,7 +66,7 @@ const CountryGeneral = () => {
            <HeaderCountry />
            <h2>Explora algunos paises </h2>
            <div className="country-general">
-            {!err ? countryLimit.length > 0 ? countryLimit.map(data => <Country key={data.name} name={data.name} flag={data.flag} />) : <Loading />   : 'err, no hay resultados '}
+            {!err ? countryLimit?.length > 0 ? countryLimit.map(data => <Country key={data.name} name={data.name} flag={data.flag} />) : <Loading />   : 'err, no hay resultados '}
            </div>
            <div ref={elementVisiblite} className='efect-scroll'></div>
        </section> 
