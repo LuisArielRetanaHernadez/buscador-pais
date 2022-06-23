@@ -47,7 +47,8 @@ const CountryDetails = () => {
                     <li><b>poblacion estimada: </b> {data[0].population}</li>
                 </ol>
             </div>
-        </div> : <Loading /> : 'hubo un erro'}
+            <div className='btn-desplaze'></div>
+        </div>  : <Loading /> : 'hubo un erro'}
         </>
     )
 }
